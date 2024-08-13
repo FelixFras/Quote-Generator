@@ -5,12 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Quote Generator</title>
         <link rel="stylesheet" href="style.css">
-
+        <script src="script.js" defer></script>
     </head>
     <body>
         <div id="wrapper">
             <h1>Quote Generator</h1>
-            <button id="btnNewQuote" onclick="newQuote()">New Quote</button>
+
+            <div id="control">
+                <button id="btnPrevious" onclick="showPrevious()">Previous</button>
+                <button id="btnNewQuote" onclick="newQuote()">New Quote</button>
+                <button id="btnNext" onclick="showNext()">Next</button>
+            </div>
+            
             <div id="content">
                 <cite id="quote"></cite>
                 <br><br>
@@ -18,5 +24,4 @@
             </div>
         </div>
     </body>
-    <script src="script.js"></script>
 </html>
