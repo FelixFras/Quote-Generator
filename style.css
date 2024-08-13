@@ -2,15 +2,34 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
-    background-color: azure;
+    background-color: white;
     font-size: larger;
 }
 
-#content {
-    background-color: cornsilk;
+#wrapper {
     width: fit-content;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border: solid 1px black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: azure;
+
+}
+
+#content {
+    background-color: cornsilk;
+    padding: 8px;
+    border: solid 1px black;
+    margin-top: 10px;
+}
+
+#btnNewQuote {
+    background-color: rgb(207, 215, 218);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
 }

@@ -6,7 +6,7 @@ fetch('https://api.quotable.io/random')
     .then(data => {
         const quote = data.content;
         const author = data.author;
-        quoteElement.innerText = quote;
-        authorElement.innerText = author;
+        quoteElement.innerText = '"' + quote + '"';
+        authorElement.innerText = "~ " + author;
     })
     .catch(error => console.error('Error:', error));
