@@ -18,8 +18,8 @@ function newQuote() {
                 authors.shift();
             }
 
-            showQuote(quotes.length - 1);
             currentQuote = quotes.length - 1;
+            showQuote(currentQuote);
         })
         .catch(error => console.error('Error:', error));
 }
@@ -30,6 +30,7 @@ function showQuote(i) {
 
     quoteElement.innerText = '"' + quotes[i] + '"';
     authorElement.innerText = "~ " + authors[i];
+    updateNumber();
 }
 
 function showPrevious() {
@@ -44,6 +45,11 @@ function showNext() {
         currentQuote++;
     }
     showQuote(currentQuote);
+}
+
+function updateNumber() {
+    const numberElement = document.getElementById('number');
+    numberElement.innerText = currentQuote + 1 + "/" + quotes.length;
 }
 
 newQuote();

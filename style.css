@@ -24,12 +24,39 @@ body {
     padding: 8px;
     border: solid 1px black;
     margin-top: 10px;
+    height: fit-content;
 }
 
-#btnNewQuote {
+button {
     background-color: rgb(207, 215, 218);
     border: none;
     border-radius: 5px;
-    padding: 5px;
+    padding: 7px;
     cursor: pointer;
+    margin: 5px;
+}
+
+#number {
+    position: relative;
+    top: -0.2rem;
+    left: 47vw;
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+    transform: translate(-50%, -50%);
+}
+
+#control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#btnNewQuote {
+    flex-grow: 1;
+}
+
+.btnNavigation {
+    flex-grow: 2;
 }

@@ -12,15 +12,16 @@
             <h1>Quote Generator</h1>
 
             <div id="control">
-                <button id="btnPrevious" onclick="showPrevious()">Previous</button>
+                <button id="btnPrevious" class="btnNavigation" onclick="showPrevious()">Previous</button>
                 <button id="btnNewQuote" onclick="newQuote()">New Quote</button>
-                <button id="btnNext" onclick="showNext()">Next</button>
+                <button id="btnNext" class="btnNavigation" onclick="showNext()">Forward</button>
             </div>
-            
+
             <div id="content">
                 <cite id="quote"></cite>
                 <br><br>
                 <cite id="author"></cite>
+                <p id="number">1/1</p>
             </div>
         </div>
     </body>
