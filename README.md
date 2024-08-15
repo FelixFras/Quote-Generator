@@ -10,5 +10,7 @@ On the bottom right it shows the number of the current quote and the number of s
 
 ### Usage
 
-The project is hosted with github pages under the following url: https://felixfras.github.io/Quote-Generator/  
+The project is hosted with GitHub Pages under the following URL: https://felixfras.github.io/Quote-Generator/  
 The quote generator to cure boredom or to get inspired.
+
+The website it pretty self-explanatory. There is a button to generate a new quote and two button to go backward to the previous (max 20) quotes and forward again.
